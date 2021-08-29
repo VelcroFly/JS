@@ -1,0 +1,46 @@
+<!--Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),-->
+<!--где arg1, arg2 — значения аргументов, operation — строка с названием операции.-->
+<!--В зависимости от переданного значения выполнить одну из арифметических операций (использовать функции из пункта 5)-->
+<!--и вернуть полученное значение (применить switch).-->
+
+<meta charset="utf-8">
+
+<script type="text/javascript">
+    function addition (a, b) {
+        return a + b;
+    }
+
+    function subtraction (a, b) {
+        return a - b;
+    }
+
+    function multiply (a, b) {
+        return a * b;
+    }
+
+    function division (a, b) {
+        if (b !== 0) {
+            return a / b;
+        } else {
+            return 'division by zero!';
+        }
+    }
+    function mathOperation(arg1, arg2, operation) {
+        if (operation === '+') {
+            return addition(arg1, arg2)
+        }
+        if (operation === '-') {
+            return subtraction(arg1, arg2)
+        }
+        if (operation === '*') {
+            return multiply(arg1, arg2)
+        }
+        if (operation === '/') {
+            return division(arg1, arg2)
+        }
+    }
+    alert(mathOperation(4, 2, '+'));
+    alert(mathOperation(4, 2, '-'));
+    alert(mathOperation(4, 2, '*'));
+    alert(mathOperation(4, 2, '/'));
+</script>>
