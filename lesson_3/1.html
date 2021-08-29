@@ -1,0 +1,21 @@
+<!--С помощью цикла while вывести все простые числа в промежутке от 0 до 100.-->
+
+<meta charset = "utf-8">
+
+<script type="text/javascript">
+    let num = 100;
+
+    for(let i = 2; i <= num ;i++){
+
+        let isPrime = true;
+
+        for(let j=2; j<i; j++){
+            if(i % j === 0 && i !== j){
+                isPrime = false;
+            }
+        }
+        if (isPrime === true) {
+            console.log(i);
+        }
+    }
+</script>>

@@ -1,0 +1,18 @@
+<!--Товары в корзине хранятся в массиве. Задачи:-->
+<!--Организовать такой массив для хранения товаров в корзине;-->
+<!--Организовать функцию countBasketPrice, которая будет считать стоимость корзины.-->
+
+<meta charset = "utf-8">
+
+<script type="text/javascript">
+    let basket = [['Apple', 100], ['Orange', 150], ['Pineapple', 200], ['Banana', 150]];
+
+    function countBasketPrice(basket) {
+        let res = 0;
+        for (let i of basket) {
+            res += i[1]
+            }
+        return res
+    }
+    alert(countBasketPrice(basket));
+</script>>
